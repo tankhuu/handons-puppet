@@ -3,7 +3,7 @@ class ntp {
     ensure => latest,
   }
   file { '/etc/ntp.conf': 
-    source => '/home/user/ntp.conf',
+    source => '/home/ubuntu/ntp.conf',
     replace => true,
     require => Package['ntp'],
     notify => Service['ntp'],
